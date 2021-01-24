@@ -1,5 +1,6 @@
 package com.tosuncu.shoppingapp.product.domain.es;
 
+import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,6 +9,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 @Document(indexName = "product")
 @Getter
 @Setter
+@Builder
 @EqualsAndHashCode( of="id")
 public class ProductEs {
 
